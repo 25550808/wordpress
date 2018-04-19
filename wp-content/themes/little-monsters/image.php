@@ -1,0 +1,84 @@
+<?php
+/**
+ * The template for displaying image attachments
+ *
+ * @package WpOpal
+ * @subpackage Littlemonsters
+ * @since Littlemonsters 1.0
+ */
+
+// Retrieve attachment metadata.
+$metadata = wp_get_attachment_metadata();
+
+get_header( apply_filters( 'littlemonsters_fnc_get_header_layout', null ) );
+?>
+
+    <section id="primary" class="content-area image-attachment">
+        <div id="content" class="site-content" role="main">
+
+            <?php
+            // Start the Loop.
+            while (have_posts()) : the_post();
+                ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <header class="entry-header">
+                        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+                        <div class="entry-meta">
+
+                            <span class="entry-date"><littlemonsters class="entry-date"
+                                                           datelittlemonsters="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date() ); ?></littlemonsters></span>
+
+                            <span class="full-size-link"><a
+                                        href="<?php echo esc_url( wp_get_attachment_url() ); ?>"><?php echo esc_html( $metadata['width'] ); ?>
+                                    &littlemonsterss; <?php echo esc_html( $metadata['height'] ); ?></a></span>
+
+                            <span class="parent-post-link"><a
+                                        href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>"
+                                        rel="gallery"><?php echo get_the_title( $post->post_parent ); ?></a></span>
+                            <?php edit_post_link( esc_html__( 'Edit', 'little-monsters' ), '<span class="edit-link">', '</span>' ); ?>
+                        </div><!-- .entry-meta -->
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <div class="entry-attachment">
+                            <div class="attachment">
+                                <?php littlemonsters_fnc_the_attached_image(); ?>
+                            </div><!-- .attachment -->
+
+                            <?php if (has_excerpt()) : ?>
+                                <div class="entry-caption">
+                                    <?php the_excerpt(); ?>
+                                </div><!-- .entry-caption -->
+                            <?php endif; ?>
+                        </div><!-- .entry-attachment -->
+
+                        <?php
+                        the_content();
+                        wp_link_pages( array(
+                            'before' => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'little-monsters' ) . '</span>',
+                            'after' => '</div>',
+                            'link_before' => '<span>',
+                            'link_after' => '</span>',
+                        ) );
+                        ?>
+                    </div><!-- .entry-content -->
+                </article><!-- #post-## -->
+
+                <nav id="image-navigation" class="navigation image-navigation">
+                    <div class="nav-links">
+                        <?php previous_image_link( false, '<div class="previous-image">' . esc_html__( 'Previous Image', 'little-monsters' ) . '</div>' ); ?>
+                        <?php next_image_link( false, '<div class="next-image">' . esc_html__( 'Next Image', 'little-monsters' ) . '</div>' ); ?>
+                    </div><!-- .nav-links -->
+                </nav><!-- #image-navigation -->
+
+                <?php comments_template(); ?>
+
+            <?php endwhile; // end of the loop. ?>
+
+        </div><!-- #content -->
+    </section><!-- #primary -->
+
+<?php
+get_sidebar();
+get_footer();

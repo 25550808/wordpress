@@ -1,0 +1,75 @@
+/* block */
+
+.#{$block-selector} {
+    margin-bottom: $block-module-margin-bottom;
+    position: relative;
+    .#{$block-heading-selector}{
+        font-size: 25px;
+        position: relative;
+        margin: 10px 0 30px;
+        font-family: $font-family-sans-serif;
+        text-transform: uppercase;
+        display:inline-block;
+        @media (min-width: $screen-lg) {
+          font-size: 40px;
+        }
+        > span{
+            position: relative;
+            display: block;
+        }   
+    }
+    .#{$block-content-selector} {
+    }
+}
+/* sidebar */
+.sidebar{
+   > .#{$block-selector} {
+      .#{$block-heading-selector}{
+        font-size: 24px;
+      }
+      > div,
+       > ul {          
+           padding: 0;
+       }
+       &:first-child{
+        .#{$block-heading-selector}{
+          margin-top: 0;
+          line-height: 24px;
+        }
+       }
+   }
+   &.sidebar-right{
+        margin-left: 42px;
+   } 
+   &.sidebar-left{
+        margin-right: 42px;
+   } 
+}
+
+
+/**
+ * Styling Css for widgets in Sidebar Left Static
+ */
+.#{$block-prefix}-static{
+    .#{$block-heading-selector}{
+        font-weight:500;
+    }
+    ul li { border:none }
+}
+
+/**
+ * Styling Css for widgets in footer layout
+ */
+.opal-footer{
+    .#{$block-selector} { 
+        .#{$block-heading-selector}{
+            font-size: 24px;
+            margin-bottom: 12px;
+            margin-top: 0;
+        }
+    }
+    h3.kc_title{
+        font-size:24px;
+        margin-top: 0;
+    } 
+}

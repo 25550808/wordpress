@@ -1,0 +1,336 @@
+/************************
+ * Form Styles
+ ************************/
+
+//// normal button
+.woocommerce button.button, .woocommerce input.button{
+    border-radius: 0; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+    padding: 14px 35px;
+    font-weight: 500;
+    font-size: 16px;
+    background:$theme-color;
+    color: white;
+    &:hover{
+        @include transition(all 0.3ms ease-in-out);
+        background:darken($theme-color, 5%) ;
+        color: white;
+    }
+}
+.woocommerce #respond p.form-submit{
+    background:$theme-color;
+    padding : 12px 50px;
+    line-height: 30px;
+    border-radius:0;
+    color: white;
+    position:relative;
+    z-index: 1;
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    display:inline-block;
+    &:hover{
+        background:$theme-color;
+        color: white;
+        @include transition(all 0.3s ease-out);
+        &:after{
+            @include translate(-4px,-4px);
+        }   
+    }
+    &:after{
+        position: absolute;
+        right: -4px;
+        bottom:-4px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border:2px solid $theme-color;
+        background:transparent;
+        z-index:-1;
+        @include transition(all .4s ease-out);
+    }
+}
+.woocommerce #respond p.form-submit input#submit{
+    background:transparent;
+    color: white;
+    padding:0;
+}
+.woocommerce a.button, a.yith-wcwl-add-button{
+    font-weight: normal;
+    border-radius: 0;   
+    background: transparent;
+    display: block;
+    padding: 0;
+     > * {
+        display: inline-block;
+     }
+    &:hover{
+        background:transparent;        
+        color: $theme-color;
+        @include transition(all 0.35s ease 0s);
+    }
+}
+.woocommerce form .form-row .input-checkbox{
+    position: relative;
+}
+.woocommerce form .form-row .input-text:focus, .woocommerce-page form .form-row .input-text:focus,
+ .woocommerce form .form-row textarea:focus, .woocommerce select:focus, .woocommerce-cart table.cart input.input-text:focus,
+.woocommerce form .form-row .input-text:focus, .woocommerce-page form .form-row .input-text:focus,
+.woocommerce form .form-row textarea:focus, .woocommerce select:focus, .woocommerce-cart table.cart input.input-text:focus {
+    border-color: $border-color!important;
+}
+/// submission buttons
+.woocommerce a.button.alt{
+    background: $theme-color;
+    color: white;
+    padding: 14px 30px;
+    font-size: 16px;
+    &:hover{
+        @include transition(all 0.3ms ease-in-out);
+        background:darken($theme-color, 5%) ;
+    }
+} 
+.woocommerce #respond input#submit.alt,.woocommerce button.button.alt, .woocommerce input.button.alt{
+    background:$theme-color;
+    padding : 12px 35px;
+    line-height: 30px;
+    border-radius:0;
+    color: white;
+    position:relative;
+    z-index: 1;
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    display:inline-block;
+    &:hover{
+        background:$theme-color;
+        color: white;
+        @include transition(all 0.3s ease-out);
+        &:after{
+            @include translate(-4px,-4px);
+        }   
+    }
+    &:after{
+        position: absolute;
+        right: -4px;
+        bottom:-4px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border:2px solid $theme-color;
+        background:transparent;
+        z-index:-1;
+        @include transition(all .4s ease-out);
+    }
+}
+ 
+/// add to cart button and buy product button
+ .woocommerce  a.add_to_cart_button, .woocommerce a.product_type_external, #main-container .woocommerce button.button.single_add_to_cart_button {
+    i{
+        color: $gray-dark;
+    }
+    &:hover{
+        color: $black;
+        &:hover{
+            color: $theme-color;
+        }
+    } 
+}
+.woocommerce .wishlist_table td.product-add-to-cart a{
+    background: $theme-color;
+    color: $white;
+    padding: 15px 0;
+    &:hover{
+        color: $white;
+    }
+}
+/// 
+
+
+/**
+ * Input Form Styles
+ */
+//// input and textarea. styles extended from bootstrap form
+.woocommerce form .form-row .input-text, .woocommerce-page form .form-row .input-text, .woocommerce form .form-row textarea, 
+ .woocommerce select, .woocommerce-cart table.cart input.input-text {
+	display: block;
+	height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+	padding: $padding-base-vertical $padding-base-horizontal;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $input-color;
+	background-color: transparent;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	border: 1px solid $border-color;
+	border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+	@include box-shadow(inset 0 1px 1px rgba(0,0,0,0));
+	@include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+
+	// Customize the `:focus` state to imitate native WebKit styles.
+	@include form-control-focus;
+
+	// Placeholder
+	@include placeholder;
+
+	// Disabled and read-only inputs
+	//
+	// HTML5 says that controls under a fieldset > legend:first-child won't be
+	// disabled if the fieldset is disabled. Due to implementation difficulty, we
+	// don't honor that edge case; we style them as disabled anyway.
+	&[disabled],
+	&[readonly],
+	fieldset[disabled] & {
+		background-color: $input-bg-disabled;
+		opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+	}
+
+	&[disabled],
+	fieldset[disabled] & {
+		cursor: $cursor-disabled;
+	}
+}
+.woocommerce #content table.cart td.actions .button, .woocommerce #content table.cart td.actions .input-text, 
+.woocommerce #content table.cart td.actions input, .woocommerce table.cart td.actions .button, 
+.woocommerce table.cart td.actions .input-text, .woocommerce table.cart td.actions input, 
+.woocommerce-page #content table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .input-text, 
+.woocommerce-page #content table.cart td.actions input, .woocommerce-page table.cart td.actions .button, 
+.woocommerce-page table.cart td.actions .input-text, .woocommerce-page table.cart td.actions input{
+    width: auto!important;
+}
+.woocommerce form .form-row textarea{
+   min-height: 100px;   
+}
+.woocommerce-cart table.cart input{
+   line-height: 1.62857;
+   text-transform: uppercase;
+    @media (min-width: $screen-sm) and (max-width: $screen-sm-max){
+        width: auto !important;
+    }
+    @media (max-width: $screen-phone){
+        width: auto !important;
+    }
+    @media (max-width: 320px) {
+        float: left !important;
+        margin:10px 0;
+    }
+}
+
+.woocommerce #content table.cart td.actions .input-text, 
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+    width: auto!important;
+    padding: 9px ;
+}
+.woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, 
+.woocommerce #respond input#submit[disabled]:disabled, .woocommerce a.button.disabled, 
+.woocommerce a.button:disabled, .woocommerce a.button[disabled]:disabled, .woocommerce button.button.disabled, 
+.woocommerce button.button:disabled, .woocommerce button.button[disabled]:disabled, 
+.woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button[disabled]:disabled{
+    padding-top: 0 ;
+    padding-bottom: 0;
+}
+.woocommerce #respond input#submit.added::after, .woocommerce a.button.added::after, .woocommerce button.button.added::after, .woocommerce input.button.added::after{
+    position:absolute;
+    top: 15px;
+    right: -15px;
+}
+.woocommerce form .form-row.woocommerce-validated .select2-container, 
+.woocommerce form .form-row.woocommerce-validated input.input-text, 
+.woocommerce form .form-row.woocommerce-validated select {
+    border-color: $theme-color;
+}
+.woocommerce form .form-row-first, .woocommerce form .form-row-last, 
+.woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last{
+    @media screen and (max-width: $screen-xs-min) {
+        float: none!important;
+        width: auto!important;
+    }
+}
+// tab
+.woocommerce-tabs{
+    .panel {
+        border:none;
+        margin:0 !important;
+        @include box-shadow(none);
+    }
+    .shop_attributes{
+        border:0 !important;
+    }
+}
+
+.woocommerce .quantity .qty{
+     width: 70px;
+     padding-left: 15px!important;
+      padding-right: 15px!important;
+}
+.woocommerce-cart table.cart input{
+    text-transform: none;
+     padding: 0 25px;
+      line-height:  42px;
+}
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2,
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1{
+    float: none;
+     width: 100%;
+
+}
+.woocommerce-checkout{
+    margin-bottom: 70px;
+}
+.select2-container .select2-choice{
+    border-color: $border-color;
+    height: 42px;
+    line-height: 42px;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message{
+    background-color: transparent;
+    border-top: none;
+    padding:  10px 25px !important;
+    margin-bottom: 10px !important;
+    @include border-radius(3px);
+    border: 1px solid transparent;
+    &:before{
+        content: "";
+    }
+    a{
+        color: $theme-color;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.woocommerce-error{
+    background-color: lighten($brand-danger, 40%);
+    border-color: lighten($brand-danger, 20%);
+} 
+.woocommerce-info{
+    background-color: lighten($brand-info, 30%);
+    border-color: lighten($brand-info, 25%);
+} 
+.woocommerce-message{
+    background-color: lighten($brand-warning, 30%);
+    border-color: lighten($brand-warning, 20%);
+}
+.woocommerce-checkout-review-order-table{
+    th{
+        border-bottom: none;
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+    }
+    td{
+        border: none;
+    }
+    .order-total .woocommerce-Price-amount{
+        color: $theme-color;
+    }
+} 
+
+.woocommerce-checkout input.button{
+    width: 100%;
+}
+
+.woocommerce table.shop_table_responsive tr td, 
+.woocommerce-page table.shop_table_responsive tr td{
+    overflow: hidden;
+}

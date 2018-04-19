@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<themecustomize>
+    <section title="Theme Color">
+        <maincolor>
+            <id>theme_color</id>
+            <title>Theme Color</title> 
+            <color>#b7e3e4</color>  
+        </maincolor>
+
+        <maincolor>
+            <id>primary_color</id>
+            <title>Primary Color</title> 
+            <color>#b7e3e4</color>
+        </maincolor>
+
+        <maincolor>
+            <id>text_color</id>
+            <title>Text Body Color</title> 
+            <color>#999999</color>
+        </maincolor>
+
+        <maincolor>
+            <id>text_link_color</id>
+            <title>Text Link Color</title> 
+            <color>#000000</color>
+        </maincolor>
+
+        <maincolor>
+            <id>border_color</id>
+            <title>Border Color</title> 
+            <color>#e8e8e8</color>
+        </maincolor>
+
+        <maincolor>
+            <id>headings_color</id>
+            <title>Headings Color</title> 
+            <color>#000000</color>
+        </maincolor>
+
+        <maincolor>
+            <id>skin_pink_color</id>
+            <title>Skins(pink) Theme Color</title> 
+            <color>#fbc9d0</color>  
+        </maincolor>
+
+        <maincolor>
+            <id>skin_blue_color</id>
+            <title>Skins(blue) Theme Color</title> 
+            <color>#94dcd3</color>  
+        </maincolor>
+
+        <maincolor>
+            <id>skin_yellow_color</id>
+            <title>Skins(yellow) Theme Color</title> 
+            <color>#ffce61</color>  
+        </maincolor>
+
+
+    </section>
+
+    <section title="Header">
+        <control>
+            <id>header_bg</id>
+            <title>Header Background</title>
+            <selector>.opal-page-inner .site-header</selector>
+            <property>background-color</property>
+        </control>
+        <control>
+            <id>header_color</id>
+            <title>Header Color</title>
+            <selector>.opal-page-inner .site-header</selector>
+            <property>color</property>
+        </control>
+        <control>
+            <id>headerlink_color</id>
+            <title>Header Link Color</title>
+            <selector>.opal-page-inner .site-header a,.navbar-mega .navbar-nav > li > a,.topcart</selector>
+            <property>color</property>
+        </control>
+        <control>
+            <id>headerlink_hover_color</id>
+            <title>Header Link Hover Color</title>
+            <selector>.opal-page-inner .site-header a:hover,.navbar-mega .navbar-nav > li > a:hover, .navbar-mega .navbar-nav > li > a:focus,.navbar-mega .navbar-nav > li.active > a, .navbar-mega .navbar-nav > li:hover > a, .navbar-mega .navbar-nav > li:focus > a,.navbar-mega .navbar-nav > li.active > a .caret, .navbar-mega .navbar-nav > li:hover > a .caret, .navbar-mega .navbar-nav > li:focus > a .caret</selector>
+            <property>color</property>
+        </control>
+    </section>
+
+    <section title="Breadscrumb">
+        <control>
+            <id>breadscrumb_bg</id>
+            <title>Breadscrumb BG</title>
+            <selector>#opal-breadscrumb</selector>
+            <property>background</property> 
+        </control>
+        <control>
+            <id>breadscrumb_link_hover</id>
+            <title>Breadscrumb Link Color</title>
+            <selector>#opal-breadscrumb .breadcrumb, #opal-breadscrumb .breadcrumb *:last-child, #opal-breadscrumb .breadcrumb *:after</selector>
+        </control>
+        <control>
+            <id>breadscrumb_title</id>
+            <title>Breadscrumb Title Color</title>
+            <selector>#opal-breadscrumb h2.bread-title</selector>
+        </control>
+    </section>
+
+    <section title="Footer">
+        <control>
+            <id>footer_bg</id>
+            <title>Footer BG</title>
+            <selector>.opal-footer</selector>
+            <property>background-color</property>
+        </control>
+        <control>
+            <id>footer_color</id>
+            <title>Footer Color</title>
+            <selector>.opal-footer, .opal-footer a</selector>
+        </control>
+        <control>
+            <id>heading_color</id>
+            <title>Heading Color</title>
+            <selector>.opal-footer .widget .widget-title, .opal-footer .widget .widgettitle, .opal-footer-profile .kc-title-wrap h3.kc_title, .opal-footer-profile h3</selector>
+        </control>
+    </section>
+
+    <section title="WooCommerce">
+        <control>
+            <id>product_bg</id>
+            <title>Product BG</title>
+            <selector>.product-block:hover .image .product-image:before</selector>
+            <property>background-color</property>
+        </control>
+        <control>
+            <id>product_name</id>
+            <title>Product Name</title>
+            <selector>.product-block .name a</selector>
+            <property>color</property>
+        </control>
+        <control>
+            <id>price_color</id>
+            <title>Price Color</title>
+            <selector>.product-block .price > *</selector>
+            <property>color</property>
+        </control>
+        <control>
+            <id>price_old_color</id>
+            <title>Price Old Color</title>
+            <selector>.product-block .price del span</selector>
+            <property>color</property>
+        </control>
+    </section>
+</themecustomize>
+

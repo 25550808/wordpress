@@ -1,0 +1,53 @@
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+.text-lg{
+  font-size: 24px;
+  font-weight: 800;
+}
+
+
+ img{
+    max-width: 100%;
+    height:auto;
+ }
+ .equal-height{
+    @media(min-width: $screen-md){
+        @include flexbox();
+    }
+}
+i, cite, em, var, address, dfn{
+	font-style:normal;
+}
+
+.bypostauthor{
+    color:inherit;
+}
+@font-face {
+    font-family: 'manifold_cfbold';
+    src: url('#{$image-fonts-path}/manifoldcf-bold-webfont.eot');
+    src: url('#{$image-fonts-path}/manifoldcf-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$image-fonts-path}/manifoldcf-bold-webfont.woff2') format('woff2'),
+         url('#{$image-fonts-path}/manifoldcf-bold-webfont.woff') format('woff'),
+         url('#{$image-fonts-path}/manifoldcf-bold-webfont.ttf') format('truetype'),
+         url('#{$image-fonts-path}/manifoldcf-bold-webfont.svg#manifold_cfbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'manifold_cflight';
+    src: url('#{$image-fonts-path}/manifoldcf-light-webfont.eot');
+    src: url('#{$image-fonts-path}/manifoldcf-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$image-fonts-path}/manifoldcf-light-webfont.woff2') format('woff2'),
+         url('#{$image-fonts-path}/manifoldcf-light-webfont.woff') format('woff'),
+         url('#{$image-fonts-path}/manifoldcf-light-webfont.ttf') format('truetype'),
+         url('#{$image-fonts-path}/manifoldcf-light-webfont.svg#manifold_cflight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

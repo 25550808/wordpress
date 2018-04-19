@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>
+提示信息- 魔客吧</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content=",魔客吧" />
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<base href="http://www.moke8.com/" /><link rel="stylesheet" type="text/css" href="http://www.moke8.com/data/cache/style_12_common.css?Paj" /><link rel="stylesheet" type="text/css" href="http://www.moke8.com/data/cache/style_12_forum_attachment.css?Paj" /><script type="text/javascript">var STYLEID = '12', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'Paj', charset = 'gbk', discuz_uid = '0', cookiepre = 'hHeW_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'login|newthread|reply', creditnotice = '1|威望|,2|金币|,3|贡献|,4|魔币|', defaultstyle = '', REPORTURL = 'aHR0cDovL3d3dy5tb2tlOC5jb20vZm9ydW0ucGhwP21vZD1hdHRhY2htZW50', SITEURL = 'http://www.moke8.com/', JSPATH = 'static/js/';</script>
+<script src="http://www.moke8.com/static/js/common.js?Paj" type="text/javascript"></script>
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js?v=20160917" type="text/javascript" type="text/javascript"></script>
+<script type="text/javascript">jq = jQuery.noConflict();</script>
+<script src="http://www.moke8.com/moke8/js/header.js" type="text/javascript"></script>
+<script src="http://www.moke8.com/static/js/forum.js?Paj" type="text/javascript"></script>
+</head><body id="nv_forum" class="pg_attachment" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div class="addhead" style="height: 80px; display: none;"></div><div class="head">
+  <div class="head-con">
+    <p><a href="http://www.moke8.com/" class="logo">魔客吧</a></p>
+    <div class="nav-mo clearfix">
+      <div class="nav-home"> <a href="./" class="n-c">首页</a> </div>
+      <div class="nav-lis"> <a href="http://www.moke8.com/xueyuan/" class="n-c">学院</a> <i style="display: inline;" class="hot-ico"></i>
+        <ul style="width:305px;">
+          <li><a href="http://www.moke8.com/xueyuan/websiteshipin/">网站建设视频教程</a></li>
+          <li><a href="http://www.moke8.com/xueyuan/discuzshipin/">Discuz视频教程</a></li>
+          <li><a href="http://www.moke8.com/xueyuan/dedecmsshipin/">织梦视频教程</a></li>
+          <li><a href="http://www.moke8.com/xueyuan/divcssshipin/">div+css视频教程</a></li>
+          <li><a href="http://www.moke8.com/xueyuan/wangzhuanshipin/">网赚视频教程</a></li>
+          <li><a href="http://www.moke8.com/xueyuan/dreamweavershipin/">dreamweaver视频教程</a></li>
+        </ul>
+      </div>
+      <div class="nav-lis"> <a href="/moban/" class="n-c">模板</a>
+        <ul>
+          <li><a href="http://www.moke8.com/discuzx/">discuz模板</a></li>
+          <li><a href="http://www.moke8.com/dedecms/">dedecms模板</a></li>
+          <li><a href="http://www.moke8.com/wordpress/">wordpress模板</a></li>
+          <li><a href="http://www.moke8.com/phpwind/">phpwind模板</a></li>
+          <li><a href="http://www.moke8.com/joomla/">joomla模板</a></li>
+          <li><a href="http://www.moke8.com/phpcms/">phpcms模板</a></li>
+          <li><a href="http://www.moke8.com/ecms/">帝国cms模板</a></li>
+          <li><a href="http://www.moke8.com/ecshop/">ecshop模板</a></li>
+          <li><a href="http://www.moke8.com/shopex/">shopex模板</a></li>
+          <li><a href="http://www.moke8.com/html/">div+css模板</a></li>
+        </ul>
+      </div>
+      <div class="nav-lis"> <a href="http://www.moke8.com/sucai/" class="n-c">素材<i class="sucai-ico"></i></a>
+        <ul>
+          <li><a href="http://www.moke8.com/psd/">PSD素材</a></li>
+          <li><a href="http://www.moke8.com/shiliang/">矢量素材</a></li>
+          <li><a href="http://www.moke8.com/daima/">网页特效</a></li>
+          <li><a href="http://www.moke8.com/ico/">图标</a></li>
+        </ul>
+      </div>
+      <div class="nav-lis"> <a href="http://www.moke8.com/cmsjiaocheng/" class="n-c">教程</a>
+        <ul>
+          <li><a href="http://www.moke8.com/cmsjiaocheng/discuz/">discuz教程</a></li>
+          <li><a href="http://www.moke8.com/cmsjiaocheng/phpwind/">phpwind教程</a></li>
+          <li><a href="http://www.moke8.com/cmsjiaocheng/dedecms/">dedecms教程</a></li>
+          <li><a href="http://www.moke8.com/cmsjiaocheng/phpcms/">phpcms教程</a></li>
+          <li><a href="http://www.moke8.com/cmsjiaocheng/ecms/">帝国cms教程</a></li>
+          <li><a href="http://www.moke8.com/cmsjiaocheng/wordpress/">wordpress教程</a></li>
+          <li><a href="http://www.moke8.com/cmsjiaocheng/ecshop/">ecshop教程</a></li>
+          <li><a href="http://www.moke8.com/cmsjiaocheng/shopex/">shopex教程</a></li>
+        </ul>
+      </div>
+      <div class="nav-home"> <a href="/special/xinshou/" class="n-c" rel="nofollow">新手</a> <i class="new-ico" style="display: inline;"></i> </div>
+      <div class="nav-home"> <a href="/bbs/" class="n-c">论坛</a> </div>
+      <div class="nav-lis"> <a href="/article-2321-1.html" target="_blank" class="n-c">更多</a>
+        <ul>
+          <li><a href="http://www.moke8.com/chajian/">程序插件</a></li>
+          <li><a href="http://www.moke8.com/code/">网站源码</a></li>
+          <li><a href="http://www.moke8.com/webproduction/">网页制作</a></li>
+          <li><a href="http://www.moke8.com/webbiz/">网站运营</a></li>
+          <li><a href="http://www.moke8.com/biancheng/">网络编程</a></li>
+          <li><a href="http://www.moke8.com/news/">行业资讯</a></li>
+          <li><a href="http://www.moke8.com/mobile/">移动互联</a></li>
+          <li><a href="http://www.moke8.com/collection/">淘贴</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="topbanner"> <a target="_blank" href="http://www.moke8.com/xueyuan/peixun/"><img src="/moke8/banner/peixun.png" width="280" height="80" alt="在线建站培训"></a> </div>
+      <div class="user-ed" id="islogin">
+    <div class="lot lilist"><a href="javascript:;" class="tit key icon iconfont"><em>工单</em></a>
+      <ul>
+        <li><a href="/plugin.php?id=service" rel="nofollow"><i class="icon iconfont">&#xe650;</i>提交工单</a></li>
+        <li><a href="/plugin.php?id=service&amp;mod=list&amp;type=3" rel="nofollow"><i class="icon iconfont">&#xe633;</i>我的工单</a></li>
+        <li><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=272922238&amp;site=www.moke8.com&amp;menu=yes" rel="nofollow" target="_blank"><i class="icon iconfont">&#xe655;</i>客服QQ：272922238</a></li>
+              </ul>
+    </div>
+    <div class="lot"><a rel="nofollow" href="/search.php?mod=forum" class="tit key icon iconfont"><em>搜索</em></a>
+      <ul style="width:250px;">
+        <div class="search" id="header_search">
+          <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+  <input type="hidden" name="mod" value="forum" />
+  <input type="hidden" name="formhash" value="b0751b0d" />
+  <input type="hidden" name="srhfid" value="" />
+  <input type="hidden" name="srhlocality" value="forum::attachment" />
+    <label> <em>搜索模板,插件,素材</em>
+  <input name="srchtxt" type="text" class="seatext" autocomplete="off" maxlength="100" value="" autocomplete="off" x-webkit-speech speech />
+  </label>
+  <input type="submit" value="&#xe625;" class="seabutton icon iconfont">
+  <div class="about-ser"> </div>
+</form>
+        </div>
+      </ul>
+    </div>
+    <div class="lot"><a rel="nofollow" href="/member.php?mod=moke8comreg" class="tit czjb icon iconfont"><em>注册</em></a> </div>
+    <div class="lot"><a rel="nofollow" href="/member.php?mod=logging&amp;action=login" class="tit key icon iconfont"><em>登录</em></a>
+      <ul>
+        <li style="padding:2px 7px"><a href="/member.php?mod=logging&amp;action=login" rel="nofollow">用户名账号登录</a></li>
+        <li style="padding:2px 7px"><a href="/connect.php?mod=login&amp;op=init&amp;referer=http://www.moke8.com/&amp;statfrom=login" rel="nofollow"><img alt="QQ登录" class="vm" src="/static/image/common/qq_login.gif" width="124" height="24"></a></li>
+        <li style="padding:2px 7px"><a href="plugin.php?id=wechat:login" rel="nofollow"><img alt="微信登录" class="vm" src="source/plugin/wechat/image/wechat_login.png" width="118" height="24"></a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="moke-main">
+<div id="wp" class="wp"><div id="ct" class="wp cl w">
+<div class="nfl">
+<div class="f_c altw">
+<div id="messagetext" class="alert_error">
+<p>抱歉，该附件无法读取</p>
+<script type="text/javascript">
+if(history.length > (BROWSER.ie ? 0 : 1)) {
+document.write('<p class="alert_btnleft"><a href="javascript:history.back()">[ 点击这里返回上一页 ]</a></p>');
+} else {
+document.write('<p class="alert_btnleft"><a href="./">[ 魔客吧 首页 ]</a></p>');
+}
+</script>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+
+
+<script type="text/javascript">
+_attachEvent(window, 'load', getForbiddenFormula, document);
+function getForbiddenFormula() {
+var toGetForbiddenFormulaFIds = function () {
+ajaxget('plugin.php?id=cloudsearch&formhash=b0751b0d');
+};
+var a = document.body.getElementsByTagName('a');
+for(var i = 0;i < a.length;i++){
+if(a[i].getAttribute('sc')) {
+a[i].setAttribute('mid', hash(a[i].href));
+a[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+var btn = document.body.getElementsByTagName('button');
+for(var i = 0;i < btn.length;i++){
+if(btn[i].getAttribute('sc')) {
+btn[i].setAttribute('mid', hash(btn[i].id));
+btn[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+}
+</script>
+
+<div class="footer">
+  <div id="ft" class="wp cl">
+    <p> <a target="_blank" href="/article-1470-1.html" rel="nofollow">联系我们</a> | <a target="_blank" href="/article-1466-1.html" rel="nofollow">关于我们</a> | <a target="_blank" href="/article-1468-1.html" rel="nofollow">版权声明</a> | <a target="_blank" href="/help/" rel="nofollow">帮助中心</a> | <a target="_blank" href="/article-1469-1.html" rel="nofollow">广告服务</a> | <a target="_blank" href="/article-2321-1.html" rel="nofollow">网站地图</a>
+          </p>
+    <span> 魔客吧专业提供网站模板，网页模板，模板教程，网页制作，程序插件，网站素材等建站资源，我们致为于打造优秀的建站资源共享平台！ </span>
+    <p> Copyright @ 2010-2015 <a href="http://www.moke8.com/" target="_blank">魔客吧</a> 版权所有
+            蜀ICP备09014119号 川公网安备51050202000165号                  &nbsp;&nbsp;<span id="tcss"></span><script type="text/javascript" src="http://tcss.qq.com/ping.js?v=1VERHASH" charset="utf-8"></script><script type="text/javascript" reload="1">pgvMain({"discuzParams":{"r2":"5238379","ui":0,"rt":"forum","md":"attachment","pn":1,"qq":"000"},"extraParams":""});</script>          </p>
+          </div>
+</div>
+<div id="g_upmine_menu" class="tip tip_3" style="display:none;">
+  <div class="tip_c"> 积分 0, 距离下一级还需  积分 </div>
+  <div class="tip_horn"></div>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function(){showTopLink();});</script>
+<script>
+
+(function(){
+
+    var bp = document.createElement('script');
+
+    var curProtocol = window.location.protocol.split(':')[0];
+
+    if (curProtocol === 'https'){
+
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+
+  }
+
+  else{
+
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+
+  }
+
+    var s = document.getElementsByTagName("script")[0];
+
+    s.parentNode.insertBefore(bp, s);
+
+})();
+
+</script>			<div id="discuz_tips" style="display:none;"></div>
+			<script type="text/javascript">
+				var tipsinfo = '5238379|X2.5|0.6||0||0|7|1523799484|74d9fe4ac7843b3ee27efd5b08e9f2e6|2';
+			</script>
+			<script src="http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js?v=1" type="text/javascript" charset="UTF-8"></script><script type="text/javascript"  src="//idm-su.baidu.com/su.js"></script>
+</body></html>
